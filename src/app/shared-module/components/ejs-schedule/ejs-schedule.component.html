@@ -1,0 +1,105 @@
+<div class="control-section row">
+  <div class="col-lg-10 content-wrapper">
+    <div class="d-flex justify-content-between" style="margin-left: 25px;">
+      <div class="mr-auto d-flex justify-content-start">
+      <ejs-daterangepicker cssClass="e-outline" class="mx-2" placeholder='Select a range' [min]='minDate' [max]='maxDate'>
+      </ejs-daterangepicker>
+
+      <ejs-dropdownlist id='games' #sample [dataSource]='currentViewData' (change)='onChange($event)'
+        [(value)]='scheduleView' cssClass="e-outline" [fields]='fields' placeholder='select timeview'
+        popupHeight='200px'></ejs-dropdownlist>
+
+      </div>
+   
+      <div class="align-self-center">
+        <span>Show Map</span> <ejs-switch id="unchecked"></ejs-switch>
+      </div>
+    </div>
+
+    <ejs-schedule #schedule width='100%' cssClass='timeline-resource-grouping' height='90vh'
+      [startHour]="workHours.start" [endHour]="workHours.end" [(currentView)]="scheduleView" [showHeaderBar]='false'
+      (eventRendered)="applyCategoryColor($event)" [enableAllDayScroll]="true" (actionBegin)="onActionBegin($event)"
+      [selectedDate]="selectedDate" [group]="group" [workDays]="workDays" [eventSettings]="eventSettings">
+      <ng-template #resourceHeaderTemplate let-data>
+          <div class="template-wrap">
+            <div class="specialist-category">
+              <div *ngIf="getPersonStatus(data)">
+               
+                <img src="/assets/img/{{ getPersonImageName(data)}}.png" class="specialist-image" />
+              </div>
+              <div class="specialist-name"><b>{{getPersonName(data)}}</b></div>
+              <div *ngIf="getPersonStatus(data)" class="specialist-designation"> 4 Job Cards</div>
+            </div>
+          </div>
+        </ng-template>
+      <!-- <e-header-rows>
+          <e-header-row option='Date'>
+            <ng-template #template let-data>
+              <span [innerHTML]="getDateDetails(data)"></span>
+            </ng-template>
+          </e-header-row>
+          <e-header-row option='Hour'></e-header-row>
+        </e-header-rows>
+        <e-views>
+          <e-view displayName='Timeline Day' option='TimelineDay' [interval]="3"></e-view>
+        </e-views> -->
+        <ng-template #eventSettingsTemplate let-data> 
+          <div class='template-wrap w-100'> 
+            <div class="d-flex justify-content-between align-item-center ">
+              <div class="py-2">
+                <div class="Subject" ><b> {{data?.Subject}}</b></div> 
+                <div class="subjectInfo">ABC Company <div class="cbullet"></div> {{data?.JobName}}</div> 
+              </div>
+              <div class="align-self-center">
+                <img src="/assets/img/{{ getPriorityImageName(data)}}.svg" class="p-image" />
+              </div>
+            </div>
+           
+          </div> 
+      </ng-template> 
+
+      <e-resources>
+        <e-resource field='LocationId' title='Choose Location' [dataSource]='locationsDataSource'
+          [allowMultiple]='false' name='Locations' textField='LocationName' idField='Id' colorField='color'>
+        </e-resource>
+        <e-resource field='PersonId' title='Choose Person' [dataSource]='PersonDataSource' [allowMultiple]='false'
+          name='Persons' textField='PersonName' idField='Id' groupIDField='groupId' colorField='color'>
+        </e-resource>
+      </e-resources>
+      <e-views>
+        <e-view option="TimelineWeek"></e-view>
+      </e-views>
+    </ejs-schedule>
+  </div>
+  <div class="col-lg-2">
+
+      <div class="card p-0">
+        <div class="card-body " style="height: 90vh;">
+
+          <ejs-treeview #treeObj cssClass='treeview-external-drag' dragArea=".drag-sample-wrapper"
+            [allowDragAndDrop]='allowDragAndDrop' (nodeDragStop)="onTreeDragStop($event)" [fields]='field'
+            (nodeDragStart)="onTreeDragStart()" (nodeDragging)="onTreeDrag($event)"
+            (nodeSelecting)="onItemSelecting($event)">
+            <ng-template #nodeTemplate let-data>
+              <div id="waiting" [ngClass]="data.JobTypeClass?data.JobTypeClass:'DefaultState'">
+              
+                    <div id="waitdetails">
+                      <div id="waitlist">{{data.Subject}}</div>
+                      <div class="specialist-name">
+                        <img src="/assets/img/{{ getPriorityImageName(data)}}.svg" class="p2-image" />
+                        {{data.JobName }} </div>
+                      <div id="waitcategory">{{data.Description}}</div>
+                    </div>
+               
+              </div>
+            </ng-template>
+          </ejs-treeview>
+        </div>
+
+    </div>
+
+
+
+
+
+  </div>

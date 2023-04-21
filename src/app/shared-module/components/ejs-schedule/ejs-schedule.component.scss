@@ -1,0 +1,280 @@
+.timeline-resource-grouping.e-schedule:not(.e-device) .e-agenda-view .e-content-wrap table td:first-child {
+    width: 90px;
+}
+.timeline-resource-grouping.e-schedule .e-agenda-view .e-resource-column {
+    width: 100px;
+}
+.e-schedule .e-timeline-view .e-date-header-wrap table tbody td,
+.e-schedule .e-timeline-month-view .e-date-header-wrap table tbody td{
+  width: 600px  !important;
+}
+
+.e-schedule .e-timeline-view .e-resource-cells,
+.e-schedule .e-timeline-month-view .e-resource-cells {
+  height: 40px;
+}
+
+.DefaultState,.Escalated,.onHold,.NotStarted,.InProgress{
+    height: 50px !important;
+    text-align: left !important;
+    font-size:  14px !important;
+    font-family:  Roboto !important;
+    border-radius: 4px !important;
+    letter-spacing: 0px !important;
+    opacity: 1 !important;
+
+}
+.DefaultState{
+    background: #E0F0FD 0% 0% no-repeat padding-box !important;
+    border: 1px solid #2196F31A !important;
+    color: #2196F3 !important;
+    .cbullet{
+      background: #2196F3 !important;}
+}
+.Escalated{
+    background: #FBE1E8 0% 0% no-repeat padding-box !important;
+    border: 1px solid #E324421F !important;
+    color:#E32442 !important;
+    .cbullet{
+      background: #E32442 !important;}
+}
+.onHold{
+    background: #FDF1DF 0% 0% no-repeat padding-box !important;
+    border: 1px solid #F897001F !important;
+    color:  #F89700 !important;
+    .cbullet{
+      background: #F89700 !important;}
+}
+
+.NotStarted{
+    background: #ECEDF4 0% 0% no-repeat padding-box !important;
+    border: 1px solid #6E6D7A1F !important;
+    color: #707070 !important;
+    .cbullet{
+      background: #707070 !important;}
+}
+
+.InProgress{
+    background: #e3fde0 0% 0% no-repeat padding-box !important;
+    border: 1px solid #2196F31A !important;
+    color: #21f35d !important;
+    .cbullet{
+      background: #21f35d !important;}
+}
+.e-schedule .e-timeline-view .e-resource-cells, .e-schedule .e-timeline-month-view .e-resource-cells{
+  max-height: 60px;
+}
+
+
+.cbullet{
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+
+/////////////////////////
+/// 
+/// 
+
+.drag-sample-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.schedule-container {
+  padding-right: 10px;
+  width: 100%;
+}
+
+.title-container {
+  padding-bottom: 10px;
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells.e-parent-node .template-wrap {
+  padding: 3px 0px;
+}
+.subjectInfo{
+font-size: 11px;
+font-weight: 400;
+font-family: Roboto;
+}
+
+.title-text {
+  font-size: 18px;
+  margin: 0px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.treeview-external-drag #waiting {
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.treeview-external-drag #waitdetails {
+  width: 95%;
+  float: left;
+  height: 100%;
+  padding: 0;
+}
+
+.treeview-external-drag #waitlist {
+  width: 100%;
+  height: 50%;
+  font-weight: bold;
+  font-family: "Segoe UI";
+  font-size: 12px;
+  padding: 5px 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.treeview-external-drag #waitcategory {
+  height: 50%;
+  font-family: "Segoe UI";
+  font-size: 10px;
+  opacity: 0.6;
+  padding-left: 10px;
+  padding-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.treeview-external-drag .e-list-text, .treeview-external-drag.e-rtl .e-list-text, .e-bigger .treeview-external-drag .e-list-text, .e-bigger .treeview-external-drag.e-rtl .e-list-text {
+  border: 0.5px solid #E1E7EC;
+  height: 50px;
+  line-height: 15px;
+  padding: 0 5px;
+  width: 220px;
+}
+
+.treeview-external-drag .e-list-parent, .treeview-external-drag.e-rtl .e-list-parent, .e-bigger .treeview-external-drag .e-list-parent, .e-bigger .treeview-external-drag.e-rtl .e-list-parent {
+  height: 100%;
+  padding: 0 2px;
+}
+
+.treeview-external-drag .e-list-item, .e-bigger .treeview-external-drag .e-list-item {
+  height: 100%;
+  padding: 0 0 5px 0;
+}
+
+.treeview-external-drag .e-fullrow, .e-bigger .treeview-external-drag .e-fullrow {
+  height: 55px;
+}
+
+.treeview-external-drag .e-list-item.e-hover>.e-fullrow, .treeview-external-drag .e-list-item.e-active>.e-fullrow, .treeview-external-drag .e-list-item.e-active.e-hover>.e-fullrow, .e-bigger .treeview-external-drag .e-list-item.e-hover>.e-fullrow, .e-bigger .treeview-external-drag .e-list-item.e-active>.e-fullrow, .e-bigger .treeview-external-drag .e-list-item.e-active.e-hover>.e-fullrow {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none !important;
+}
+
+.treeview-external-drag .e-text-content, .e-bigger .treeview-external-drag .e-text-content, .treeview-external-drag.e-rtl .e-text-content, .e-bigger .treeview-external-drag.e-rtl .e-text-content {
+  padding: 0;
+  background-color: inherit;
+}
+
+.e-drag-item.e-treeview.treeview-external-drag, .e-bigger .e-drag-item.e-treeview.treeview-external-drag {
+  padding: 0 !important;
+}
+
+.e-schedule.schedule-drag-drop .e-timeline-view .e-resource-left-td, .e-schedule.schedule-drag-drop .e-timeline-month-view .e-resource-left-td {
+  width: 160px;
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells.e-parent-node .specialist-category {
+  padding-left: 30px
+}
+
+.e-schedule.e-rtl.schedule-drag-drop .e-resource-cells.e-parent-node .specialist-category {
+  padding-right: 30px
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells.e-child-node .specialist-category, .e-schedule.schedule-drag-drop .e-resource-cells.e-child-node .specialist-name {
+  padding: 5px
+}
+
+.tailwind .e-schedule.schedule-drag-drop .e-resource-cells.e-child-node .specialist-category,
+.tailwind .e-schedule.schedule-drag-drop .e-resource-cells.e-child-node .specialist-name,
+.tailwind-dark .e-schedule.schedule-drag-drop .e-resource-cells.e-child-node .specialist-category,
+.tailwind-dark .e-schedule.schedule-drag-drop .e-resource-cells.e-child-node .specialist-name {
+  padding: unset !important;
+}
+
+.e-schedule.schedule-drag-drop .e-resource-cells.e-parent-node .specialist-name {
+  padding: 0 10px
+}
+
+.e-schedule.schedule-drag-drop .specialist-name {
+  font-size: 16px;
+}
+.specialist-name {
+  font-size: 16px;
+  color: #535151;
+}
+
+.e-schedule.schedule-drag-drop .specialist-designation {
+  font-size: 10px;
+}
+
+.e-device-hover {
+  background-color: #e0e0e0 !important;
+}
+
+.e-schedule.schedule-drag-drop .specialist-image {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.specialist-image {
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.p-image {
+  width: 10px;
+  height: 15px;
+  float: right;
+  margin-right: 5px;
+}
+
+.p2-image{
+  width: 10px;
+  height: 15px;
+  float: left;
+  margin-right: 5px;
+}
+
+@media (max-width: 550px) {
+  /* custom code start*/
+  .drag-sample-wrapper {
+    display: block;
+  }
+  .schedule-container {
+    padding-bottom: 10px
+  }
+  /* custom code end*/
+  .treeview-external-drag.e-treeview, .e-bigger .treeview-external-drag.e-treeview {
+    width: 250px;
+  }
+  .e-bigger .treeview-external-drag.e-treeview.e-drag-item {
+    position: relative !important;
+  }
+}
+.e-disble-not-allowed {
+  cursor: unset !important;
+}
+
+.e-drag-item.treeview-external-drag .e-icon-expandable {
+  display: none;
+}

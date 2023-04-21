@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.945" height="14" viewBox="0 0 13.945 14">
+  <g id="Icon_settings" data-name="Icon settings" transform="translate(0.75)">
+    <path id="Path_39" data-name="Path 39" d="M2176.751,39.963H2189.2" transform="translate(-2176.751 -37.658)" fill="none" stroke="#2e3447" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_40" data-name="Path 40" d="M2176.751,39.963H2189.2" transform="translate(-2176.751 -32.992)" fill="none" stroke="#2e3447" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Path_41" data-name="Path 41" d="M2176.751,39.963H2189.2" transform="translate(-2176.751 -28.325)" fill="none" stroke="#2e3447" stroke-linecap="round" stroke-width="1.5"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(0.971)" fill="#fff" stroke="#2e3447" stroke-width="1.5">
+      <circle cx="2.333" cy="2.333" r="2.333" stroke="none"/>
+      <circle cx="2.333" cy="2.333" r="1.583" fill="none"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(6.416 4.667)" fill="#fff" stroke="#2e3447" stroke-width="1.5">
+      <circle cx="2.333" cy="2.333" r="2.333" stroke="none"/>
+      <circle cx="2.333" cy="2.333" r="1.583" fill="none"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(0.971 9.333)" fill="#fff" stroke="#2e3447" stroke-width="1.5">
+      <circle cx="2.333" cy="2.333" r="2.333" stroke="none"/>
+      <circle cx="2.333" cy="2.333" r="1.583" fill="none"/>
+    </g>
+  </g>
+</svg>
